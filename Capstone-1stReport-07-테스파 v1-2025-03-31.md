@@ -7,7 +7,7 @@
 | (1) 과제명 | Back-Pack: Collaborative Knowledge Transfer with Diverse Backbone Selection Beyond Modality |
 |:---  |---  |
 | (2) 팀 번호 / 팀 이름 | 07-테스파 |
-| (3) 팀 구성원 | 조민주(2176359): 리더, Perceiver 모델 개발 및 실험, 실험 환경 관리, Multi-modal 실험환경 개발, 1:N Backbone model 구축 및 개발, Scalability Test <br> 정지수(2176352): 팀원, Perceiver IO 모델 개발 및 실험, Dataset 전처리, Backbone model 선택 실험, Scalability Test <br> 한유리(2271065) : 팀원, BEiT-3 모델 개발 및 실험, 실험 서버 관리, Dataset 호환성 관리, Backbone model 선택, 실험 설계 및 통계적 검정, Scalability Test			 |
+| (3) 팀 구성원 | 조민주(2176359): 리더, Perceiver 모델 개발 및 실험, 실험 환경 관리, Multi-modal 실험환경 개발, 1:N Backbone model 구축 및 개발, Scalability Test <br> 정지수(2176352): 팀원, Perceiver IO 모델 개발 및 실험, Dataset 전처리, Backbone model 선택 실험, Scalable Study <br> 한유리(2271065) : 팀원, BEiT-3 모델 개발 및 실험, 실험 서버 관리, Dataset 호환성 관리, Backbone model 선택, 실험 설계 및 통계적 검정, Scalability Test			 |
 | (4) 팀 지도교수 | 이형준 교수님 |
 | (5) 과제 분류 | 연구 과제 |
 | (6) 과제 키워드 | Continuous learning, 1:N Federated learning, Edge AI, Multi-modality  |
