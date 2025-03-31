@@ -4,22 +4,22 @@
 <!-- "내용"에 해당하는 부분을 지우고, 여러분 과제의 내용을 작성해 주세요. -->
 
 # Team-Info
-| (1) 과제명 | *Back-Pack: Collaborative Knowledge Transfer with Diverse Backbone Selection Beyond Modality*
+| (1) 과제명 | Back-Pack: Collaborative Knowledge Transfer with Diverse Backbone Selection Beyond Modality
 |:---  |---  |
-| (2) 팀 번호 / 팀 이름 | *07-테스파* |
-| (3) 팀 구성원 | 조민주(2176359): 리더, *맡은 역할* <br> 정지수(2176352): 팀원, *맡은 역할* <br> 한유리(2271065) : 팀원, *맡은 역할*			 |
+| (2) 팀 번호 / 팀 이름 | 07-테스파 |
+| (3) 팀 구성원 | 조민주(2176359): 리더, Perceiver 모델 개발 및 실험, 실험 환경 관리, Multi-modal 실험환경 개발, 1:N Backbone model 구축 및 개발, Scalability Test <br> 정지수(2176352): 팀원, Perceiver IO 모델 개발 및 실험, Dataset 전처리, Backbone model 선택 실험, Scalability Test <br> 한유리(2271065) : 팀원, BEiT-3 모델 개발 및 실험, 실험 서버 관리, Dataset 호환성 관리, Backbone model 선택, 실험 설계 및 통계적 검정, Scalability Test			 |
 | (4) 팀 지도교수 | 이형준 교수님 |
-| (5) 과제 분류 | *연구 과제* |
-| (6) 과제 키워드 | *Continuous learning, 1:N Federated learning, Edge AI, Multi-modality*  |
-| (7) 과제 내용 요약 | *전체 과제 내용을 10줄이내로 설명* |
+| (5) 과제 분류 | 연구 과제 |
+| (6) 과제 키워드 | Continuous learning, 1:N Federated learning, Edge AI, Multi-modality  |
+| (7) 과제 내용 요약 | 분산형 지속 학습 환경에서는 다양한 백본(backbone) 모델을 사용하는 각 디바이스 간에 과제(task)와 모달리티(image, text)를 넘나드는 지식 전이가 큰 도전 과제로 남아 있다. 본 연구에서는 Back-Pack이라는 협업 학습 프레임워크를 제안하여, 디바이스마다 여러 개의 backbone을 유지하면서 이미지와 텍스트 간, 혹은 동일 모달 내에서 선택적으로 지식을 다중전이할 수 있도록 한다. 우리는 지속적인 분류 학습 환경에서 지식 전이의 방향성에 따라 성능이 일관되게 향상되는 경향이 있음을 실험적으로 관찰하였고, 다수의 모델에서 추출한 지식을 하나의 백본에 융합(packing)할 경우 추가적으로 성능 향상을 확인하였다. 본 연구는 분산형 다모달 지속학습 환경에서 지식전이의 방향성과 모델 융합 전략이 핵심적인 요소임을 실증적으로 밝힌다. |
 
 <br>
 
 # Project-Summary
 | 항목 | 내용 |
 |:---  |---  |
-| (1) 문제 정의 | *본 과제를 통하여 해결/완화하고자하는 문제에 대하여 기술. Target Customer 정의와 해결해야 할 문제점들(pain points)대한 내용 기술*  |
-| (2) 기존연구와의 비교 | *유사한 과제/연구/서비스/시스템의 예를 들고, 각각의 장단점을 기술할 것. 특히, 본 과제가 유사과제에 대하여 갖는 장점을 부각할 것* |
+| (1) 문제 정의 | 1. 이질적인 data와 다양한 modality, multiple task 환경에서 edge간 학습할 때 효율적인 Continual Learning 알고리즘 부재, Catastrophic Forgetting 문제 발생 <br> 2. decentralized 환경에서 raw data를 공유함으로써 발생하는 communicational/computational cost 문제 <br> 3. Cross/intra-modal backbone으로부터 knowledge transfer 시, 특정한 학습 패턴을 파악해볼 수 있을 것 <br> 4. device-to-device knowledge transfer 방식은 device간 collaborative한 transfer 방식보다 학습 효과가 낮을 것 |
+| (2) 기존연구와의 비교 | 선행 연구: Pick-a-back: Selective Device-to-Device Knowledge Transfer in Federated Continual Learning, ECCV24 <br> Pick-a-back(선행 연구)의 핵심 아이디어 <br> 1. 각 device가 데이터를 공유하지 않고 독립적으로 학습 <br> 2. 자신과 유사한 데이터 패턴을 가진 기기의 모델을 선택적으로 가져와서 자신의 지식을 전달 <br> 3. 기존의 Catastrophic Forgetting 문제를 방지하면서 continual learning 가능 |
 | (3) 제안 내용 | *본 프로젝트에서 제시한 문제를 해결하기 위해 새롭제 제안하는 해결책 or 해결책들에 대하여 기술 .* |
 | (4) 기대효과 및 의의 | *프로젝트의 결과물을 통하여 얻을 수 있는 기대효과 및 의의에 대하여 기술 .* |
 | (5) 주요 기능 리스트 | *(3)에서 제안한 해결책들을 지원or구현하기 위하여 필요한 주요 기능 혹은 기능을을 List-up하고, <br> 각각에 대하여 설명* <br> * 본 항목의 내용을 충실히 기재 바람니다. *|
