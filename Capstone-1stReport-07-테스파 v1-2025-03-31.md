@@ -21,7 +21,7 @@
 | (1) 문제 정의 | 1. 이질적인 data와 다양한 modality, multiple task 환경에서 edge간 학습할 때 효율적인 Continual Learning 알고리즘 부재, Catastrophic Forgetting 문제 발생 <br> 2. decentralized 환경에서 raw data를 공유함으로써 발생하는 communicational/computational cost 문제 <br> 3. Cross/intra-modal backbone으로부터 knowledge transfer 시, 특정한 학습 패턴을 파악해볼 수 있을 것 <br> 4. device-to-device knowledge transfer 방식은 device간 collaborative한 transfer 방식보다 학습 효과가 낮을 것 |
 | (2) 기존연구와의 비교 | - 선행 연구: Pick-a-back: Selective Device-to-Device Knowledge Transfer in Federated Continual Learning, ECCV24 <br> - Pick-a-back(선행 연구)의 핵심 아이디어 <br> 1. 각 device가 데이터를 공유하지 않고 독립적으로 학습 <br> 2. 자신과 유사한 데이터 패턴을 가진 기기의 모델을 선택적으로 가져와서 자신의 지식을 전달 <br> 3. 기존의 Catastrophic Forgetting 문제를 방지하면서 continual learning 가능 <br> ![선행연구와 우리연구 비교](tespa-1st-report-image1.png) |
 | (3) 제안 내용 | 1) 1:N Knowledge Transfer algorithm <br> N개의 장치에서 학습한 지식을 그룹화하여 분류 후 장치끼리의 지식 전달하는 clustering 알고리즘 개발 <br> 모델 간 지식 융합 실험: 여러 모델의 지식을 하나의 모델로 통합하여 지식 전이했을 때 성능 향상이 있는지 검증 <br> 2) Multi-modality <br> 다양한 모달리티의 데이터를 embedding space 상 표현하여 edge 간 전이 <br> 교차, 단일 모달 내 지식전이 실험: 특정 전이 방향이 지속적으로 학습 성능을 향상시키는지 검증 <br> 3) Decentralized Continual Learning <br> 중앙 서버가 없는 환경에서 지속적으로 들어오는 task에 대해 Catastrophic Forgetting 현상을 최소화하는 알고리즘 구축 <br> Decentralized Continual learning 환경 구축: backbone 모델로부터 지속적으로 task를 학습시킬 수 있도록 환경 구축 |
-| (4) 기대효과 및 의의 | *프로젝트의 결과물을 통하여 얻을 수 있는 기대효과 및 의의에 대하여 기술 .* |
+| (4) 기대효과 및 의의 | 데이터의 모달리티 전이 방향에 따른 학습 성능 향상 패턴을 분석 후, 선택적 지식 전이를 통해 최적의 백본 모델로 packing함으로써 개별 학습자의 성능을 개선 |
 | (5) 주요 기능 리스트 | *(3)에서 제안한 해결책들을 지원or구현하기 위하여 필요한 주요 기능 혹은 기능을을 List-up하고, <br> 각각에 대하여 설명* <br> * 본 항목의 내용을 충실히 기재 바람니다. *|
 
 <br>
