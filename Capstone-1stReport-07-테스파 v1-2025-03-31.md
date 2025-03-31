@@ -32,7 +32,7 @@
 | (1) 요구사항 정의 | *프로젝트를 완성하기 위해 필요한 요구사항을 설명하기에 가장 적합한 방법을 선택하여 기술* <br> 예) <br> - 기능별 상세 요구사항(또는 유스케이스) <br> - 설계 모델(클래스 다이어그램, 클래스 및 모듈 명세서) <br> - UI 분석/설계 모델 <br> - E-R 다이어그램/DB 설계 모델(테이블 구조) |
 | (2) 전체 시스템 구성 | ![실험순서](tespa-1st-report-image_2.png) |
 | (3) 주요엔진 및 기능 설계 | *프로젝트의 주요 기능 혹은 모듈의 설계내용에 대하여 기술한다 <br> SW 구조 그림에 있는 각 Module의 상세 구현내용을 자세히 기술한다.* |
-| (4) 주요 기능의 구현 | *<주요기능리스트>에 정의된 기능 중 최소 2개 이상에 대한 상세 구현내용을 기술한다.* |
+| (4) 주요 기능의 구현 | [Multimodality와 Decentralized Continual Learning 기능 구현 및 실험 방법] <br> - Multi-modality 환경에서의 Backbone 선택 및 지식전이 실험 설계 <br> 1) (Image, Text, Class) 로 이루어진 Cross-modal dataset을 준비한다 <br> 2) Dataset을 modality와 class에 따라 N개의 Subgroup으로 나눈 후, 이것으로 model을 각각 학습시킨다. <br> 3) Model 학습 시, 다양한 Continual Learning 방법을 사용한다. <br> 4) 각 모델의 최적의 pruning ratio를 파악한다. <br> 5) 학습시킨 모델 간의 유사도를 측정한다. <br> 6) 가장 유사도가 높은 모델을 backbone으로 지정하여, 지식전이를 수행한다. <br> <br> - Task: Multiclass classification <br> - Model: Perceiver: General Perception with Iterative Attention, PerceiverIO, Beit-3 <br> - Modality에 따른 전처리기 <br> - Text: BERT Tokenizer + embedding projection <br> - Image: Patchify, Patch Coord <br> <br> [데이터셋별 실험 setup] <br> 1. N24News <br> - Image 6개 + Text 6개 = 12개 <br> - 모델 별 클래스 수: 3개 <br> 2. Oxford 102 Flowers <br> - Image 6개 + Text 6개 = 12개 <br> - 모델 별 클래스 수: 4개 <br> 3. MS COCO 2017 <br> - Image 15개 + Text 15개 = 30개 <br> - 모델 별 클래스 수: 4개 <br> 4. CUB <br> - Image 27개 + Text 27개 = 54개 <br> - 모델 별 클래스 수: 5개 |
 | (5) 기타 | *기타 사항을 기술*  |
 
 <br>
